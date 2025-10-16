@@ -1,0 +1,203 @@
+*{
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    
+}
+body{
+    width:99%;
+    background-color:#000000;
+    color: white;
+}
+header{
+    background: linear-gradient(135deg,#6A097D,#C060A1,#F1D4D4);
+    
+}
+.title {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1{
+    padding: 1rem 1rem 3rem 1rem;
+    color:#eeedeb;
+    /* text-align: center; */
+    font-size: 3rem;
+    margin: 0;
+}
+.image{
+  height: 150px;
+  width: 150px;
+  border: 1px solid;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
+}
+.social{
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease, font-size 0.3s ease;
+  display:flex;
+  gap:15px;
+}
+.social a{
+  color:#6A097D;
+}
+
+
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: right;
+    width:99%;
+   gap:15px;
+
+}
+nav ul li a{
+    font-size: 20px;
+    color:#6A097D;
+    text-decoration: none;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    
+}
+
+ a:hover{
+    color:red;
+    font-weight:bolder;
+    font-size:1.5rem;
+}
+
+span{
+    color:#C060A1;
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 3rem;
+    color:#6A097D;
+    line-height: 1;
+    margin:2rem 2px;
+}
+
+p{
+    line-height: 1;
+    margin:1rem 0rem;
+    font-size: 20px;
+}
+.intro{
+    font-size: 2rem;
+    font-weight:bold;
+}
+ .lang{
+display: flex;
+    justify-content: center;
+  
+}
+.lang ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:5px;
+    
+
+}
+.lang ul li{
+list-style: none;
+border:1px solid #6A097D;
+padding:1rem 3rem;
+background-color:#F1D4D4; 
+
+}
+.experience-grid, .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap:15px; */
+
+
+}
+.experience,.project{
+    background-color:#C060A1 ;
+    border-radius: 15px;
+    text-align: center;
+    margin:15px 10px;
+   
+}
+.github {
+  display: inline-block;
+  background-color:#F1D4D4 ;
+  color:#C060A1 ;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .form-header {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    margin-top: 1rem;
+  }
+  
+  input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+  }
+  
+  button {
+    background-color:#C060A1;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color:#F1D4D4 ;
+    color: #6A097D;
+  }
+  
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .experience-grid, .projects-grid {
+      grid-template-columns: 1fr;
+    }
+    .lang ul{
+      flex-direction:column;
+    
+  }
+}
+ 
+
+
